@@ -1,0 +1,43 @@
+.vision{
+    position: relative;
+    margin-left: 970px;
+    margin-top: 20px;
+    background-color: white;
+    border:2px solid rgb(230, 26, 145);
+    border-radius: 6px;
+    height: 60px;
+    width: 300px;
+  }
+.h3-vision{
+  position: relative;
+  margin-top: 20px;
+  margin-left: 30%;
+  color: black;
+  font-size: large;
+  font-weight: 400;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media screen and (max-width: 960px){
+  .vision{
+    position: relative;
+    margin-left: 80px;
+    margin-top: 30px;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    color: rgb(59, 58, 58);
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+.h3-vision{
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30%;
+  border: none;
+  color: black;
+  font-size: large;
+  font-weight: 400;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+}
