@@ -27,7 +27,7 @@ function MainPage() {
                    <Route path='/Profile' element={<Profile />} />
 
             </Routes>
-    <div>
+    {/*<div>
             <NavLink to='/Home'>
                     <button style={{color:"white", background:"#091351", padding:"5px 10px 5px 10px", marginLeft: 600, borderRadius:5, border:"none", height:30}}>
                     Employee Page
@@ -35,7 +35,7 @@ function MainPage() {
             </NavLink>
 
            
-    </div>
+    </div>*/}
 </Router>
 </>
   );

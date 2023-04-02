@@ -9,14 +9,14 @@ import DocumentList from "./Components/Admin_Panel/DocumentList";
 import ImageList from "./Components/Admin_Panel/ImageList";
 import Department from "./Components/Admin_Panel/Department";
 import Designation from "./Components/Admin_Panel/Desihnation";
-
+import MainPage from "./MainPage";
 
 
 
 function App() {
   return (
     <>
-    {/*  */}
+    {/*  
 
    <BrowserRouter>
     <Routes>
@@ -29,7 +29,9 @@ function App() {
             <Route path='/Document' element={<DocumentList />} />
         </Route>
     </Routes>         
-</BrowserRouter> 
+</BrowserRouter> */}
+
+  <MainPage />
           
 {/*<BrowserRouter>
 
