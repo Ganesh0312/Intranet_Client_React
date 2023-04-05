@@ -42,7 +42,7 @@ const Social = () => {
               style ={{cursor:'pointer', width: '100%', height: '200px', objectFit: 'cover' }}
               fluid
               onClick={() => handleImageClick(image.imagesrc)}
-              className='rounded'
+              className='rounded mb-4 border-top-0 shadows'
             />
           </Col>
         ))}

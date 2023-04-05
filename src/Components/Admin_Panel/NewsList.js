@@ -29,7 +29,7 @@ export default function NewsList() {
     }
 
     const addOrEdit = (formData, onSuccess) => {
-        if (formData.get('newsId') == "0")
+        if (formData.get('newsId') === "0")
             employeeAPI().create(formData)
                 .then(res => {
                     onSuccess();
@@ -59,8 +59,8 @@ export default function NewsList() {
     }
 
     const imageCard = data => (
-        <div className="card" onClick={() => { showRecordDetails(data) }}>
-            <img src={data.imageUrl} className="card-img-top rounded-squire " />
+        <div className="card" height='70%' width='40%' onClick={() => { showRecordDetails(data) }}>
+            <img height='70%' width='40%' src={data.imageUrl} className="card-img-top rounded-squire " />
             <div className="card-body">
                 <h5>{data.newsTitale}</h5>
                 <span>{data.content}</span> <br />

@@ -11,12 +11,18 @@ import Department from "./Components/Admin_Panel/Department";
 import Designation from "./Components/Admin_Panel/Desihnation";
 import MainPage from "./MainPage";
 
-
+import Home from './Components/Employee_Panel/Pages/Home/Home';
+import News from './Components/Employee_Panel/Pages/News';
+import Social from './Components/Employee_Panel/Pages/Social';
+import People from './Components/Employee_Panel/Pages/People';
+import Stories from './Components/Employee_Panel/Pages/Stories';
+import Documents from './Components/Employee_Panel/Pages/Documents';
+import Profile from './Components/Employee_Panel/Pages/Profile';
 
 function App() {
   return (
     <>
-    {/*  
+    {/*  */}
 
    <BrowserRouter>
     <Routes>
@@ -29,11 +35,12 @@ function App() {
             <Route path='/Document' element={<DocumentList />} />
         </Route>
     </Routes>         
-</BrowserRouter> */}
+</BrowserRouter> 
 
-  <MainPage />
+  
           
-{/*<BrowserRouter>
+{/* */}
+  <BrowserRouter>
 
             <Routes>
                    <Route path='/Home' element={<Home />} />
@@ -47,9 +54,8 @@ function App() {
                    <Route path='/Profile' element={<Profile />} />
 
             </Routes>
-</BrowserRouter>*/}
+</BrowserRouter> 
         
-
 </>
   
   );

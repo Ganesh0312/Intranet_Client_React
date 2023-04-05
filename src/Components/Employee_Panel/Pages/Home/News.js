@@ -1,36 +1,46 @@
 import React, {useState, useEffect}from 'react'
 import "./NewsStyle.css";
-import img3 from "../../Images/img3.jpg";
+import { Carousel } from 'react-responsive-carousel';  
+import axios from 'axios';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+
+import news1 from "../../Images/emp1.jpg"
+import { Height } from '@mui/icons-material';
 
 function News() {
 
-const news = [
-  {id:0},
-  {id:1},
-  {id:2},
-  {id:3},
-];
+  const [news, setNews] = useState([]);
 
-const[newsData, setnewsData] = useState(news[0].description)
-const handleClick=(index)=>{
-  console.log(index)
-  const newsSlider= news[index].description;
-  setnewsData(newsSlider)
-}
+  useEffect(() =>{
+  axios.get('https://localhost:7274/api/News')
+  .then(Response =>{
+    setNews(Response.data);
+  }).catch(error =>{
+    console.log(error);
+  });
+
+ },[] );
+
   return (
-    <div>
-    <p className="text-news">Company News</p>
-         <div className="News">
-                <div>{newsData}</div>
-                <img src={img3} className="news-img"/>
-                <div className='flex_row'>
-                  {news.map((data,i)=>
-                  <h1 key={i} onClick={()=>handleClick(i)}>.</h1>)}
-                </div>
-        </div>
+  <div>
 
-    </div>
-  );
+    <p className="text-news">Company News</p>
+            <div className='News'> 
+            
+                <Carousel showThumbs={false} showIndicators={false} showStatus={false} stopOnHover={false} autoPlay={true}>  
+                {news.map(item =>(
+                        <div key={item.newsId}>  
+                            <img height='80%' classname= 'EmpImage1' src={item.imageUrl} alt={item.newsTitale}/>  
+                            <h1 className="news-h1">{item.newsTitale}</h1>
+                            <p className="news-p">{item.content}</p>
+                       </div>  
+                       ))}     
+            </Carousel>
+            
+            </div>  
+  </div>
+  )
 }
 
 export default News

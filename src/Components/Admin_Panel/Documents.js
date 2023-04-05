@@ -88,13 +88,15 @@ export default function Documents(props) {
             </div>
             <form autoComplete="off" noValidate onSubmit={handleFormSubmit}>
                 <div className="card">
-                    <img src={values.docSrc} className="card-img-top" />
+                    
                     <div className="card-body">
                         <div className="form-group">
                             <input type="file"  className={"form-control-file" + applyErrorClass('docSrc')}
                                 onChange={showPreview} id="image-uploader" />
                         </div>
-                      {/*  <div className="form-group">
+                      {/*  <img src={values.docSrc} className="card-img-top" />
+                      
+                      <div className="form-group">
                             <input className={"form-control" + applyErrorClass('employeeName')} placeholder="Employee Name" name="employeeName"
                                 value={values.employeeName}
                                 onChange={handleInputChange} />

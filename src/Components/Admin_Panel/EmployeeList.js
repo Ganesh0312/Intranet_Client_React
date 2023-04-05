@@ -59,10 +59,9 @@ export default function EmployeeList() {
 
     const imageCard = data => (
         <div className="card" onClick={() => { showRecordDetails(data) }}>
-            <img src={data.imageSrc} className="card-img-top rounded-circle" />
+            <img src={data.imageSrc} className="card-img-top rounded-squir" />
             <div className="card-body">
                 <h5>{data.employeeName}</h5>
-                <span>{data.occupation}</span> <br />
                 <span>{data.mail}</span> <br />
                 <span>{data.mobile}</span> <br />
                 <span>{data.dob}</span> <br />

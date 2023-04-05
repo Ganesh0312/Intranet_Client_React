@@ -5,7 +5,6 @@ const defaultImageSrc = '/img/image_placeholder.png'
 const initialFieldValues = {
     employeesID: 0,
     employeeName: '',
-    occupation: '',
     imageName: '',
     mail : '',
     mobile : '',
@@ -13,6 +12,7 @@ const initialFieldValues = {
     dateOfJoin : '',
     department : '',
     designation : '',
+    password : '',
     imageSrc: defaultImageSrc,
     imageFile: null
 }
@@ -80,15 +80,17 @@ export default function Employee(props) {
             const formData = new FormData()
             formData.append('employeesID', values.employeesID)
             formData.append('employeeName', values.employeeName)
-            formData.append('occupation', values.occupation)
+            //formData.append('occupation', values.occupation)
             formData.append('imageName', values.imageName)
             formData.append('imageFile', values.imageFile)
+            formData.append('password',values.password)
             formData.append('mail',values.mail)
             formData.append('mobile',values.mobile)
             formData.append('dob',values.dob)
             formData.append('dateOfJoin',values.dateOfJoin)
             formData.append('department',values.department)
             formData.append('designation',values.designation)
+            
             addOrEdit(formData, resetForm)
         }
     }
@@ -113,11 +115,7 @@ export default function Employee(props) {
                                 value={values.employeeName}
                                 onChange={handleInputChange} />
                         </div>
-                        <div className="form-group">
-                            <input className="form-control" placeholder="Occupation" name="occupation"
-                                value={values.occupation}
-                                onChange={handleInputChange} />
-                        </div>
+                       
                         <div className="form-group">
                             <input className={"form-control" + applyErrorClass('mail')} placeholder="mail" name="mail"
                                 value={values.mail}
@@ -146,6 +144,11 @@ export default function Employee(props) {
                         <div className="form-group">
                             <input className={"form-control" + applyErrorClass('designation')} placeholder="Designation" name="designation"
                                 value={values.designation}
+                                onChange={handleInputChange} />
+                        </div>
+                        <div className="form-group">
+                            <input className={"form-control" + applyErrorClass('password')} placeholder="password" name="password"
+                                value={values.password}
                                 onChange={handleInputChange} />
                         </div>
                         <div className="form-group text-center">

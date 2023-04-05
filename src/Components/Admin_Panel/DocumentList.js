@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react'
 import Documents from './Documents';
 import axios from "axios";
 
+
+const defaultImageSrc = '../../../public/img/images.png';
 export default function DocumentList() {
     const [employeeList, setEmployeeList] = useState([])
     const [recordForEdit, setRecordForEdit] = useState(null)
-
+    //const imp='../../../public/img/images.png';
     useEffect(() => {
         refreshEmployeeList();
     }, [])
@@ -59,7 +61,7 @@ export default function DocumentList() {
 
     const imageCard = data => (
         <div className="card" onClick={() => { showRecordDetails(data) }}>
-            <img src={data.docSrc} className="card-img-top rounded-circle" />
+            <img src={data.defaultImageSrc} className="card-img-top rounded-squire" />
             <div className="card-body">
                 {/*<h5>{data.employeeName}</h5>*/}
                 <span>{data.docName}</span> <br />
