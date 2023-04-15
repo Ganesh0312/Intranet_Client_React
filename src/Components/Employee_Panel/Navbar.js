@@ -52,15 +52,15 @@ function Navbar() {
                      </li>
                      <li className="nav-item">
                         <NavLink to="/People" activeClassName="active"  className="nav-links" onClick={handleClick}>
-                         POEPLE
+                         PEOPLE
                         </NavLink>
                      </li>
 
-                     <li className="nav-item">
+                    {/* <li className="nav-item">
                         <NavLink to="/Stories" activeClassName="active"  className="nav-links" onClick={handleClick}>
                          STORIES
                         </NavLink>
-                     </li>
+                     </li> */}
 
                      <li className="nav-item">
                         <NavLink to="/Documents" activeClassName="active"  className="nav-links" onClick={handleClick}>

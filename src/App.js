@@ -9,6 +9,7 @@ import DocumentList from "./Components/Admin_Panel/DocumentList";
 import ImageList from "./Components/Admin_Panel/ImageList";
 import Department from "./Components/Admin_Panel/Department";
 import Designation from "./Components/Admin_Panel/Desihnation";
+import Motivation from './Components/Admin_Panel/sidebar/Motivation';
 import MainPage from "./MainPage";
 
 import Home from './Components/Employee_Panel/Pages/Home/Home';
@@ -22,7 +23,7 @@ import Profile from './Components/Employee_Panel/Pages/Profile';
 function App() {
   return (
     <>
-    {/*  */}
+    {/*  
 
    <BrowserRouter>
     <Routes>
@@ -35,10 +36,9 @@ function App() {
             <Route path='/Document' element={<DocumentList />} />
         </Route>
     </Routes>         
-</BrowserRouter> 
+</BrowserRouter> */}
 
-  
-          
+            
 {/* */}
   <BrowserRouter>
 
