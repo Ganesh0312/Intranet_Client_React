@@ -61,7 +61,7 @@ getUserdata();
                 <div className=''> 
                 <div className='search'>
     
-                <input className="col-md-3 " type="text" name='name' style={{border:"0.1px solid #030a5eb7" ,fontSize:"20px", fontWeight:"600" ,color:"#030a5eb7"}} value={query}   onChange={(e)=>handlesearch(e)} placeholder='Search...' />
+                <input className="col-md-3 " type="text" name='name' style={{border:"0.1px solid #030a5eb7" ,fontSize:"20px", fontWeight:"600" ,color:"#030a5eb7"}} value={query}   onChange={(e)=>handlesearch(e)} placeholder='Search Employee' />
                </div>          
                   </div>                
             </div>

@@ -31,9 +31,7 @@ const Home = () => {
                 <News />
                 <DocumentsHome />
                 <Email />
-                <EmpDirectory />
-             
-       
+                <EmpDirectory />   
     </>
   )
 }

@@ -19,7 +19,7 @@ import People from './Components/Employee_Panel/Pages/People';
 import Stories from './Components/Employee_Panel/Pages/Stories';
 import Documents from './Components/Employee_Panel/Pages/Documents';
 import Profile from './Components/Employee_Panel/Pages/Profile';
-
+import Login from './Components/Login';
 function App() {
   return (
     <>
@@ -36,10 +36,11 @@ function App() {
             <Route path='/Document' element={<DocumentList />} />
         </Route>
     </Routes>         
-</BrowserRouter> */}
+</BrowserRouter> */} 
 
+<Login />
             
-{/* */}
+{/* 
   <BrowserRouter>
 
             <Routes>
@@ -54,7 +55,7 @@ function App() {
                    <Route path='/Profile' element={<Profile />} />
 
             </Routes>
-</BrowserRouter> 
+</BrowserRouter> */}
         
 </>
   
