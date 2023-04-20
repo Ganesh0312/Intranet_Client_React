@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+//import { useNavigate } from "react-router-dom";
+
+  import Home from './Employee_Panel/Pages/Home/Home';
 
 function EmployeeLoginForm() {
   const [id, setId]= useState('');
@@ -20,7 +23,7 @@ function EmployeeLoginForm() {
       .then(response => {
         setMessage(response.data.message);
         setEmail('');
-        setPassword('');
+        setPassword('');  
       })
       .catch(error => {
         setMessage(error.response.data.message);

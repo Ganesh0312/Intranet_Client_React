@@ -9,8 +9,9 @@ import DocumentList from "./Components/Admin_Panel/DocumentList";
 import ImageList from "./Components/Admin_Panel/ImageList";
 import Department from "./Components/Admin_Panel/Department";
 import Designation from "./Components/Admin_Panel/Desihnation";
-import Motivation from './Components/Admin_Panel/sidebar/Motivation';
+import Motivation from './Components/Admin_Panel/Motivation';
 import MainPage from "./MainPage";
+import Stories1 from './Components/Admin_Panel/Stories';
 
 import Home from './Components/Employee_Panel/Pages/Home/Home';
 import News from './Components/Employee_Panel/Pages/News';
@@ -20,10 +21,11 @@ import Stories from './Components/Employee_Panel/Pages/Stories';
 import Documents from './Components/Employee_Panel/Pages/Documents';
 import Profile from './Components/Employee_Panel/Pages/Profile';
 import Login from './Components/Login';
+
 function App() {
   return (
     <>
-    {/*  
+    {/*  */} 
 
    <BrowserRouter>
     <Routes>
@@ -33,12 +35,14 @@ function App() {
             <Route path='/Designation' element={<Designation />} />
             <Route path='/News' element={<NewsList />} />
             <Route path='/Images' element={<ImageList />} />
+            <Route path='/Stories' element={<Stories1 />} />
+            <Route path='./Motivation' element={<Motivation />} />
             <Route path='/Document' element={<DocumentList />} />
         </Route>
     </Routes>         
-</BrowserRouter> */} 
+</BrowserRouter> 
 
-<Login />
+
             
 {/* 
   <BrowserRouter>

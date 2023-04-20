@@ -22,6 +22,12 @@ const sidebarNavItems = [
         section: 'Department'
     },
     {
+        display: 'Motivation',
+        icon: <i className='bx bx-star'></i>,
+        to: '/Motivation',
+        section: 'Motivation'
+    },
+    {
         display: 'News',
         icon: <i className='bx bx-calendar'></i>,
         to: '/News',
@@ -32,6 +38,12 @@ const sidebarNavItems = [
         icon: <i className='bx bx-user'></i>,
         to: '/Images',
         section: 'Images'
+    },
+    {
+        display: 'Stories',
+        icon: <i className='bx bx-user'></i>,
+        to: '/Stories',
+        section: 'Stories'
     },
     
     {

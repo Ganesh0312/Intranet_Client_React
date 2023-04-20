@@ -71,26 +71,7 @@ const Department = () => {
     setIsChecked(e.target.checked);
   };*/}
 
-  {/*const empdata = [
-    {
-      id: 1,
-      name: "Mario",
-      age: 29,
-      isActive: 1,
-    },
-    {
-      id: 2,
-      name: "Vicky",
-      age: 30,
-      isActive: 1,
-    },
-    {
-      id: 3,
-      name: "Ronald",
-      age: 34,
-      isActive: 0,
-    },
-  ];*/}
+  
   const [data, setData] = useState([]);
 
   useEffect(() => {
