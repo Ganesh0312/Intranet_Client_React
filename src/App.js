@@ -25,7 +25,7 @@ import Login from './Components/Login';
 function App() {
   return (
     <>
-    {/*  */} 
+    {/*  
 
    <BrowserRouter>
     <Routes>
@@ -40,8 +40,9 @@ function App() {
             <Route path='/Document' element={<DocumentList />} />
         </Route>
     </Routes>         
-</BrowserRouter> 
+</BrowserRouter> */} 
 
+<Login />
 
             
 {/* 
@@ -54,7 +55,7 @@ function App() {
                    <Route path='/News' element={<News/>} />
                    <Route path='/Social' element={<Social />} />
                    <Route path='/People' element={<People />} />
-                   <Route path='/Stories' element={<Stories />} />
+                   <Route path='/Storiesemp' element={<Stories />} />
                    <Route path='/Documents' element={<Documents />} />
                    <Route path='/Profile' element={<Profile />} />
 

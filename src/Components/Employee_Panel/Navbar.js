@@ -34,36 +34,36 @@ function Navbar() {
        <div className="nav-container">
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                      <li className="nav-item">
-                        <NavLink to="/Home" activeClassName="active" className="nav-links" onClick={handleClick}>
+                        <NavLink to="/Home" activeclassname="active" className="nav-links" onClick={handleClick}>
                          HOME
                         </NavLink>
                      </li>
 
                      <li className="nav-item">
-                        <NavLink to="/News" activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/News" activeclassname="active"  className="nav-links" onClick={handleClick}>
                          News
                         </NavLink>
                      </li>
 
                      <li className="nav-item">
-                        <NavLink to="/Social" activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/Social" activeclassname="active"  className="nav-links" onClick={handleClick}>
                          SOCIAL
                         </NavLink>
                      </li>
                      <li className="nav-item">
-                        <NavLink to="/People" activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/People" activeclassname="active"  className="nav-links" onClick={handleClick}>
                          PEOPLE
                         </NavLink>
                      </li>
 
-                    {/* <li className="nav-item">
-                        <NavLink to="/Stories" activeClassName="active"  className="nav-links" onClick={handleClick}>
+                     <li className="nav-item">
+                        <NavLink to="/Storiesemp" activeclassname="active"  className="nav-links" onClick={handleClick}>
                          STORIES
                         </NavLink>
-                     </li> */}
+                     </li> 
 
                      <li className="nav-item">
-                        <NavLink to="/Documents" activeClassName="active"  className="nav-links" onClick={handleClick}>
+                        <NavLink to="/Documents" activeclassname="active"  className="nav-links" onClick={handleClick}>
                          DOCUMENT
                         </NavLink>
                      </li>
